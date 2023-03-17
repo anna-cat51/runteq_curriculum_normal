@@ -31,3 +31,15 @@ module RunteqNormal
     config.generators.system_tests = nil
   end
 end
+module XXX
+  class Application < Rails::Application
+    config.load_defaults 5.2
+
+    config.generators do |g|  # ここから追記
+      g.assets false          # CSS, JavaScriptファイル生成せず
+      g.skip_routes true   # trueならroutes.rb変更せず、falseなら通常通り変更
+      g.test_framework false  # testファイル生成せず
+      g.helper false
+    end                       # ここまで
+  end
+end
