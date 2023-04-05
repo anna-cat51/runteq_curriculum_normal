@@ -1,0 +1,34 @@
+<tr id="comment-<%= comment.id %>">
+    <td style="width: 60px">
+    <img
+        class="rounded-circle"
+        src="<%= comment.user.image.url %>"
+        width="50"
+        height="50"
+    />
+    </td>
+    <td>
+    <h3 class="small"><%= comment.user.name %></h3>
+    <tr id="js-comment-<%= comment.id %>">
+        <p><%= comment.body %></p>
+    </div>
+    <%<div style="display: none">
+        <%= form_with(model: comment, url: comment_path(comment) local: true do |f| %>
+        <%= f.textarea class: "form-control mb-1" %>
+        <button class="btn btn-light">キャンセル</button>
+        <%= f.submit "更新", class: "btn btn-success" %>
+    </td>
+
+    <td class="action">
+    <ul class="list-inline justify-content-center" style="float: right">
+        <li class="list-inline-item">
+        <a href="#"><i class="fa fa-pencil"></i></a>
+        </li>
+        <li class="list-inline-item">
+        <a href="#">
+            <i class="fa fa-trash"></i>
+        </a>
+        </li>
+    </ul>
+    </td>
+</tr>

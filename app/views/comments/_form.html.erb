@@ -1,0 +1,5 @@
+<%= form_with model:@comment, local: true do |f| %>
+    <%= f.label :body %>
+    <%= f.text_area :body, class: "form-control mb-3", rows: 4 %>
+    <%= f.submit class: "btn btn-primary" %>
+<% end %>
