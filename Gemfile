@@ -71,3 +71,5 @@ gem 'pry-byebug'
 gem 'rails-i18n', '~> 5.1'
 gem 'draper'
 gem 'faker'
+
+gem 'carrierwave'
