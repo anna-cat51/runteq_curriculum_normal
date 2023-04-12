@@ -1,6 +1,10 @@
 class BoardsController < ApplicationController
     before_action :find_board, only: [:edit, :update, :destroy]
 
+    def bookmarks
+        @bookmark_boards = current_user.bookmark_boards.includes(:user).order(created_at: :desc)
+    end
+
     def index
         @boards = Board.all.includes(:user).order(created_at: :desc)
     end

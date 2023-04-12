@@ -9,7 +9,11 @@
                     </a>
                 </h4>
                 <div class='mr10 float-right'>
-                    <%= render 'crud_menus', board: board  if current_user.own?(board) %>
+                    <% if current_user.own?(board) %>
+                        <%= render 'crud_menus', board: board %>
+                    <% else %>
+                        <%= render 'bookmark_button', board: board %>
+                    <% end %>
                 </div>
                 <ul class="list-inline">
                     <li class="list-inline-item">
