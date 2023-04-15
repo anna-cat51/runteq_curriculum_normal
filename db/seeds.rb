@@ -11,7 +11,7 @@
         first_name: Faker::Name.unique.first_name,
         email: Faker::Internet.unique.email,
         password: "6510test",
-        password_confirmation: "6510test"
+        password_confirmation: "6510test"s
     )
 end
 
