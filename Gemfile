@@ -73,3 +73,5 @@ gem 'draper'
 gem 'faker'
 
 gem 'carrierwave'
+gem 'kaminari'
+gem 'bootstrap4-kaminari-views'
