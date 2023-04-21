@@ -60,6 +60,8 @@ ja:
   profiles:
     show:
       title: "プロフィール"
+    edit:
+      title: "プロフィール編集"
   time:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
