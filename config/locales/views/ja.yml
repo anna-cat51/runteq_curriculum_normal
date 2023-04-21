@@ -13,6 +13,7 @@ ja:
       deleted: "%{item}を削除しました"
       delete_confirm: "削除しますか？"
       unbookmark: "ブックマークを外しました"
+    search_word: "検索ワード"
   users:
     new:
       title: "ユーザー登録"
@@ -33,6 +34,7 @@ ja:
   boards:
     index:
       title: "掲示板一覧"
+      no_result: "掲示板がありません。"
     new:
       title: "掲示板作成"
     create:
@@ -42,7 +44,7 @@ ja:
       title: "掲示板詳細"
     bookmarks:
       title: "ブックマーク一覧"
-    no_result: "掲示板がありません。"
+      no_result: "掲示板がありません。"
     edit:
       title: "掲示板編集"
       no_result: "ブックマーク中の掲示板がありません。"
