@@ -13,6 +13,7 @@ ja:
       not_updated: "%{item}を更新できませんでした"
       deleted: "%{item}を削除しました"
       delete_confirm: "削除しますか？"
+      not_authorized: "権限がありません"
       unbookmark: "ブックマークを外しました"
     search_word: "検索ワード"
   users:
@@ -82,3 +83,15 @@ ja:
       not_logged_in:
         message:
           require_login: "ログインしてください"
+  admin:
+    user_sessions:
+      new:
+        title: "ログイン"
+      create:
+        success: "ログインしました"
+        fall: "ログインに失敗しました"
+      destroy:
+        success: "ログアウトしました"
+    dashboards:
+      index:
+        title: "ダッシュボード"
