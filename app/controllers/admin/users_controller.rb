@@ -1,8 +1,9 @@
 class Admin::UsersController < Admin::BaseController
+  before_action :set_user, only: %i[show edit update destroy]
 
   def index
     @q= User.ransack(params[:p])
-    @user = @q.result(distinct: true).order(created_at: :desc).page(params[:page])
+    @users = @q.result(distinct: true).order(created_at: :desc).page(params[:page])
   end
 
   def show; end
@@ -19,7 +20,7 @@ class Admin::UsersController < Admin::BaseController
 
   def destroy
     @user.destroy!
-    redirect_to admin_user_path, success: '削除しました'
+    redirect_to admin_users_path, success: '削除しました'
   end
 
   private
