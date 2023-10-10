@@ -4,6 +4,7 @@ ja:
       user: "ユーザー"
       board: "掲示板"
       comment: "コメント"
+      profile: "プロフィール"
     attributes:
       user:
         email: "メールアドレス"
@@ -11,9 +12,17 @@ ja:
         password_confirmation: "パスワード確認"
         last_name: "姓"
         first_name: "名"
+        full_name: "氏名"
+        avatar: "アバター"
       board:
         title: "タイトル"
         body: "本文"
         board_image: "サムネイル"
       comment:
         body: "コメント"
+  activerrecord:
+    enums:
+      user:
+        role:
+          general: "一般"
+          admin: "管理者"

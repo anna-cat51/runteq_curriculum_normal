@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   authenticates_with_sorcery!
 
+  enum role: { general: 0, admin: 1 }
+
   has_many :boards, dependent: :destroy
   has_many :comments, dependent: :destroy
   has_many :bookmarks, dependent: :destroy
@@ -14,6 +16,8 @@ class User < ApplicationRecord
   validates :email, presence: true
   validates :first_name, presence: true, length: { maximum: 255 }
   validates :last_name, presence: true, length: { maximum: 255 }
+  validates :reset_password_token, uniqueness: true, allow_nil: true
+  mount_uploader :avatar, AvatarUploader
 
   def own?(object)
     id == object.user_id

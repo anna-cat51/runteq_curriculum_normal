@@ -4,6 +4,7 @@ ja:
     register: "登録"
     logout: "ログアウト"
     post: "投稿"
+    password_reset: "パスワードリセット"
     message:
       require_login: "ログインしてください"
       created: "%{item}を作成しました"
@@ -12,6 +13,7 @@ ja:
       not_updated: "%{item}を更新できませんでした"
       deleted: "%{item}を削除しました"
       delete_confirm: "削除しますか？"
+      not_authorized: "権限がありません"
       unbookmark: "ブックマークを外しました"
     search_word: "検索ワード"
   users:
@@ -60,6 +62,19 @@ ja:
   profiles:
     show:
       title: "プロフィール"
+    edit:
+      title: "プロフィール編集"
+  password_resets:
+    new:
+      title: "パスワードリセット申請"
+      submit: "送信"
+    create:
+      success: "パスワードリセット手順を送信しました"
+    edit:
+      title: "パスワードリセット"
+    update:
+      success: "パスワードを変更しました"
+      fail: "パスワードの変更に失敗しました"
   time:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
@@ -68,3 +83,15 @@ ja:
       not_logged_in:
         message:
           require_login: "ログインしてください"
+  admin:
+    user_sessions:
+      new:
+        title: "ログイン"
+      create:
+        success: "ログインしました"
+        fall: "ログインに失敗しました"
+      destroy:
+        success: "ログアウトしました"
+    dashboards:
+      index:
+        title: "ダッシュボード"
