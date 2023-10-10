@@ -7,24 +7,25 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-sm-12">
       <table class="table table-striped">
-      <thead>
+        <thead>
         <tr>
           <th scope="col"><%= Board.human_attribute_name(:id) %></th>
           <th scope="col"><%= Board.human_attribute_name(:title) %></th>
           <th scope="col"><%= Board.human_attribute_name(:user) %></th>
           <th scope="col"><%= Board.human_attribute_name(:created_at) %></th>
+          <th scope="col"></th>
         </tr>
-      </thead>
-      <tbody>
+        </thead>
+        <tbody>
         <%= render @boards %>
-      </tbody>
+        </tbody>
       </table>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-sm-12">
       <!-- ページネーション -->
       <%= paginate @boards %>
     </div>
